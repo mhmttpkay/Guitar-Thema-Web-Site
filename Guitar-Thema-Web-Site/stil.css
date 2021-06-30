@@ -1,0 +1,151 @@
+/* Reset Code */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+
+/* *********** */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    background-image: url(img/guitar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:40px 0;
+}
+
+.header-logo{
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid #BD9354;
+    border-radius: 35px;
+    padding-bottom:5px ;
+    color: white;
+}
+
+
+ul {
+    display: flex;
+}
+ul li{
+    margin-left: 27px;
+}
+
+ul li:first-child{
+    margin-right: 70px;
+}
+ul li a{
+    font-weight: bold;
+    color:white;
+    font-size: 15px;
+
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #493323;
+}
+.first-letter{
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color:#493323;
+}
+h3{
+    margin-top: 4px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Jomhuria', cursive;
+}
+
+.btn-guitar{
+    display: block;
+    background-color: #493323;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+    position: relative;   
+    overflow: hidden; 
+}
+
+.btn-guitar::after{
+    content: "BUY";
+    position: absolute;
+    top: 100%;
+    left: 0;
+   background-color:#91684A;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: .5s;
+}
+
+.btn-guitar:hover::after{
+    top: 0;
+
+}
